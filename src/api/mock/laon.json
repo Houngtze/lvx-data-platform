@@ -1,0 +1,550 @@
+{
+  "code": "1000",
+  "message": "success",
+  "data": {
+    "moduleOptions": [
+      {
+        "id": "GroupCountAndAmount",
+        "title": "集团笔数与金额",
+        "index": "1",
+        "show": true,
+        "moduleData": [
+          {
+            "period": "日",
+            "chartOption": {
+              "title": {
+                "text": "集团笔数与金额",
+                "subtext": "二级标题"
+              },
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "legend": {
+                "data": [
+                  "实际放款金额",
+                  "授信申请笔数",
+                  "放款笔数"
+                ]
+              },
+              "xAxis": [
+                {
+                  "data": [
+                    "7/4",
+                    "7/5",
+                    "7/6",
+                    "7/7",
+                    "7/8"
+                  ],
+                  "type": "category"
+                }
+              ],
+              "yAxis": [
+                {
+                  "type": "value",
+                  "name": "金额（万元）",
+                  "min": 0,
+                  "max": 140
+                },
+                {
+                  "type": "value",
+                  "name": "笔数（笔）",
+                  "min": 0,
+                  "max": 140
+                }
+              ],
+              "series": [
+                {
+                  "data": [
+                    59,
+                    93,
+                    84,
+                    127,
+                    33
+                  ],
+                  "name": "实际放款金额",
+                  "type": "bar"
+                },
+                {
+                  "data": [
+                    108,
+                    113,
+                    98,
+                    89,
+                    108
+                  ],
+                  "name": "授信申请笔数",
+                  "type": "line"
+                },
+                {
+                  "data": [
+                    39,
+                    69,
+                    77,
+                    104,
+                    121
+                  ],
+                  "name": "放款笔数",
+                  "type": "line"
+                }
+              ]
+            }
+          },
+          {
+            "period": "周",
+            "chartOption": {
+              "title": {
+                "text": "集团笔数与金额",
+                "subtext": "二级标题"
+              },
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "legend": {
+                "data": [
+                  "实际放款金额",
+                  "授信申请笔数",
+                  "放款笔数"
+                ]
+              },
+              "xAxis": [
+                {
+                  "data": [
+                    "周一",
+                    "周二",
+                    "周三",
+                    "周四",
+                    "周五"
+                  ],
+                  "type": "category"
+                }
+              ],
+              "yAxis": [
+                {
+                  "type": "value",
+                  "name": "金额（万元）",
+                  "min": 0,
+                  "max": 140
+                },
+                {
+                  "type": "value",
+                  "name": "笔数（笔）",
+                  "min": 0,
+                  "max": 140
+                }
+              ],
+              "series": [
+                {
+                  "data": [
+                    32,
+                    123,
+                    84,
+                    51,
+                    124
+                  ],
+                  "name": "实际放款金额",
+                  "type": "bar"
+                },
+                {
+                  "data": [
+                    85,
+                    53,
+                    123,
+                    52,
+                    51
+                  ],
+                  "name": "授信申请笔数",
+                  "type": "line"
+                },
+                {
+                  "data": [
+                    32,
+                    51,
+                    65,
+                    72,
+                    84
+                  ],
+                  "name": "放款笔数",
+                  "type": "line"
+                }
+              ]
+            }
+          },
+          {
+            "period": "月",
+            "chartOption": {
+              "title": {
+                "text": "集团笔数与金额",
+                "subtext": "二级标题"
+              },
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "legend": {
+                "data": [
+                  "实际放款金额",
+                  "授信申请笔数",
+                  "放款笔数"
+                ]
+              },
+              "xAxis": [
+                {
+                  "data": [
+                    "1月",
+                    "2月",
+                    "3月",
+                    "4月",
+                    "5月"
+                  ],
+                  "type": "category"
+                }
+              ],
+              "yAxis": [
+                {
+                  "type": "value",
+                  "name": "金额（万元）",
+                  "min": 0,
+                  "max": 140
+                },
+                {
+                  "type": "value",
+                  "name": "笔数（笔）",
+                  "min": 0,
+                  "max": 140
+                }
+              ],
+              "series": [
+                {
+                  "data": [
+                    51,
+                    39,
+                    100,
+                    113,
+                    123
+                  ],
+                  "name": "实际放款金额",
+                  "type": "bar"
+                },
+                {
+                  "data": [
+                    88,
+                    94,
+                    121,
+                    43,
+                    104
+                  ],
+                  "name": "授信申请笔数",
+                  "type": "line"
+                },
+                {
+                  "data": [
+                    68,
+                    80,
+                    115,
+                    73,
+                    107
+                  ],
+                  "name": "放款笔数",
+                  "type": "line"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "HbCountAndAmount",
+        "title": "合约机笔数与金额",
+        "index": "2",
+        "show": true,
+        "moduleData": [
+          {
+            "period": "日",
+            "chartOption": {
+              "title": {
+                "text": "合约机笔数与金额",
+                "subtext": "二级标题"
+              },
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "legend": {
+                "data": [
+                  "实际放款金额",
+                  "授信申请笔数",
+                  "放款笔数"
+                ]
+              },
+              "xAxis": [
+                {
+                  "data": [
+                    "7/4",
+                    "7/5",
+                    "7/6",
+                    "7/7",
+                    "7/8"
+                  ],
+                  "type": "category"
+                }
+              ],
+              "yAxis": [
+                {
+                  "type": "value",
+                  "name": "金额（万元）",
+                  "min": 0,
+                  "max": 140
+                },
+                {
+                  "type": "value",
+                  "name": "笔数（笔）",
+                  "min": 0,
+                  "max": 140
+                }
+              ],
+              "series": [
+                {
+                  "data": [
+                    81,
+                    73,
+                    113,
+                    105,
+                    77
+                  ],
+                  "name": "实际放款金额",
+                  "type": "bar"
+                },
+                {
+                  "data": [
+                    119,
+                    44,
+                    105,
+                    68,
+                    74
+                  ],
+                  "name": "授信申请笔数",
+                  "type": "line"
+                },
+                {
+                  "data": [
+                    125,
+                    128,
+                    58,
+                    117,
+                    112
+                  ],
+                  "name": "放款笔数",
+                  "type": "line"
+                }
+              ]
+            }
+          },
+          {
+            "period": "周",
+            "chartOption": {
+              "title": {
+                "text": "合约机笔数与金额",
+                "subtext": "二级标题"
+              },
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "legend": {
+                "data": [
+                  "实际放款金额",
+                  "授信申请笔数",
+                  "放款笔数"
+                ]
+              },
+              "xAxis": [
+                {
+                  "data": [
+                    "周一",
+                    "周二",
+                    "周三",
+                    "周四",
+                    "周五"
+                  ],
+                  "type": "category"
+                }
+              ],
+              "yAxis": [
+                {
+                  "type": "value",
+                  "name": "金额（万元）",
+                  "min": 0,
+                  "max": 140
+                },
+                {
+                  "type": "value",
+                  "name": "笔数（笔）",
+                  "min": 0,
+                  "max": 140
+                }
+              ],
+              "series": [
+                {
+                  "data": [
+                    41,
+                    109,
+                    40,
+                    47,
+                    129
+                  ],
+                  "name": "实际放款金额",
+                  "type": "bar"
+                },
+                {
+                  "data": [
+                    101,
+                    55,
+                    49,
+                    86,
+                    111
+                  ],
+                  "name": "授信申请笔数",
+                  "type": "line"
+                },
+                {
+                  "data": [
+                    127,
+                    91,
+                    74,
+                    62,
+                    50
+                  ],
+                  "name": "放款笔数",
+                  "type": "line"
+                }
+              ]
+            }
+          },
+          {
+            "period": "月",
+            "chartOption": {
+              "title": {
+                "text": "合约机笔数与金额",
+                "subtext": "二级标题"
+              },
+              "tooltip": {
+                "trigger": "axis"
+              },
+              "legend": {
+                "data": [
+                  "实际放款金额",
+                  "授信申请笔数",
+                  "放款笔数"
+                ]
+              },
+              "xAxis": [
+                {
+                  "data": [
+                    "1月",
+                    "2月",
+                    "3月",
+                    "4月",
+                    "5月"
+                  ],
+                  "type": "category"
+                }
+              ],
+              "yAxis": [
+                {
+                  "type": "value",
+                  "name": "金额（万元）",
+                  "min": 0,
+                  "max": 140
+                },
+                {
+                  "type": "value",
+                  "name": "笔数（笔）",
+                  "min": 0,
+                  "max": 140
+                }
+              ],
+              "series": [
+                {
+                  "data": [
+                    33,
+                    37,
+                    55,
+                    105,
+                    108
+                  ],
+                  "name": "实际放款金额",
+                  "type": "bar"
+                },
+                {
+                  "data": [
+                    63,
+                    58,
+                    117,
+                    42,
+                    70
+                  ],
+                  "name": "授信申请笔数",
+                  "type": "line"
+                },
+                {
+                  "data": [
+                    38,
+                    125,
+                    46,
+                    36,
+                    67
+                  ],
+                  "name": "放款笔数",
+                  "type": "line"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "dayCount": [
+      {
+        "value": 200000,
+        "title": "当日放款金额(万)",
+        "detail": [
+          {
+            "product": "合约机",
+            "value": 200
+          },
+          {
+            "product": "号码借",
+            "value": 300
+          }
+        ]
+      },
+      {
+        "value": 200,
+        "title": "当日放款笔数(笔)",
+        "detail": [
+          {
+            "product": "合约机",
+            "value": 20
+          },
+          {
+            "product": "号码借",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "value": 1000,
+        "title": "当日笔均金额(元)",
+        "detail": [
+          {
+            "product": "合约机",
+            "value": 10
+          },
+          {
+            "product": "号码借",
+            "value": 30
+          }
+        ]
+      }
+    ]
+  },
+  "status": true,
+  "statusCode": "200"
+}

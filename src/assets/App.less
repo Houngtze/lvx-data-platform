@@ -1,0 +1,389 @@
+* {
+  -webkit-touch-callout:none;/*系统默认菜单被禁用*/
+
+ -webkit-user-select:none;/*webkit浏览器*/
+
+ -khtml-user-select:none;/*早起浏览器*/
+
+ -moz-user-select:none;/*火狐浏览器*/
+
+ -ms-user-select:none;/*IE浏览器*/
+
+  user-select:none;/*用户是否能够选中文本*/
+
+}
+
+.App {
+  position: relative;
+  background-color: #fff;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',
+  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',
+  'Segoe UI Emoji', 'Segoe UI Symbol';
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+.error-page{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 1rem;
+  p{
+    color: #a8a8a8;
+    margin-top: .18rem;
+    font-size: .3rem;
+  }
+  img{
+    display: inline-block;
+    width: 30%;
+  }
+}
+.home-container{
+  height: 100%;
+  padding-bottom: .98rem;
+  background-color: #f2f2f2;
+  & > .page-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    height: .8rem;
+    line-height: .8rem;
+    margin-bottom: .24rem;
+    z-index: 999;
+    box-shadow:0px 0.02rem 0px 0px rgba(0,0,0,0.05);
+    & > div{
+      flex: 1
+    }
+    &.fixed{
+      position: fixed;
+      left: 0;
+      top: 0;
+    }
+
+  }
+  // 筛选
+  .filter-picker,.date-picker{
+    .picker-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: .8rem;
+      img{
+        width: .18rem;
+        display: inline-block;
+        margin-left: .08rem;
+      }
+      span{
+        color: #b2b2b2;
+        font-size: .3rem !important;
+      }
+    }
+  }
+  // section
+  .section-block{
+    background-color: #fff;
+    .title{
+      padding: .4rem .32rem .16rem .32rem;
+      font-size: .4rem;
+      font-family:PingFangSC-Medium,PingFang SC;
+
+      color:rgba(45,48,52,1);
+      line-height: .56rem;
+      text-align: left;
+      h2{
+        font-weight: 700;
+      }
+    }
+  }
+  // 数据
+  .data-block{
+    padding-bottom: .4rem;
+    .section-block {
+      .counter-block{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: .78rem;
+        & > div:first-child{
+          .roll div,span{
+            color: #FF3E18;
+          }
+        }
+        & > div:nth-child(2) {
+          .roll div,span{
+            color: #FAAD14;
+          }
+        }
+        .money-counter{
+          flex: 1; 
+          .pop-content{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            height: 1.08rem;
+            font-size: .48rem;
+            line-height: .56rem;
+            font-weight: 600;
+          }
+          .counter-title{
+            font-size: .22rem;
+            font-family:PingFangSC-Regular,PingFang SC;
+            font-weight:400;
+            color:rgba(45,48,52,1);
+            line-height: .32rem;
+            padding: .04rem .12rem;
+            background:rgba(178,178,178, 0.16);
+            border-radius: .04rem;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    
+  }
+  .no-data{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .3rem;
+    color: #b2b2b2;
+  }
+  .chart-block{
+    .header{
+      padding: 0 .32rem;
+      font-family:PingFangSC-Medium,PingFang SC;
+      font-weight:500;
+      color:rgba(45,48,52,1);
+      line-height: .44rem;
+      text-align: left;
+      width: 100%;
+      padding-bottom: .28rem;
+      h3{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        font-weight: 700;
+        font-size: .32rem;
+        .header-extra{
+          margin-left: .14rem;
+          font-size: .26rem;
+          line-height: .44rem;
+          border-radius: 0.06rem;
+          border:1px solid rgba(60,121,249,1);
+          .extra-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            div:first-child{
+              font-family:PingFangSC-Regular,PingFang SC;
+              font-weight:400;
+              color:rgba(255,255,255,1);
+              padding: 0 .16rem;
+              background-color:  rgba(60,121,249,1);
+            }
+            div:last-child{
+              padding: 0 .36rem;
+              color:  rgba(60,121,249,1);
+            }
+          }
+        }
+      }
+      .header-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .model-select{
+        flex: 1;
+        padding-top: .28rem;
+        ul{
+          display: flex;
+          align-items: center;
+          justify-content: left;
+          li{
+            margin-right: .32rem;
+          }
+          img{
+            width: .16rem;
+            display: inline-block;
+          }
+          span{
+            font-size: .24rem;
+            font-weight:400;
+            line-height: .34rem;
+          }
+        }
+      }
+      .chart-time-select{
+        padding-top: .28rem;
+        border-radius: 0;
+        max-width: 2.5rem;
+        .am-segment-item{
+          font-size: .24rem;
+          line-height: .34rem;
+          padding: .08rem .24rem;
+          border-radius: 0
+        }
+      }
+    }
+    .chart-wrapper{
+      margin-bottom: .5rem;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      .content {
+        .pie{
+          padding: 0 .32rem;
+        }
+        .stacked-column{
+          padding: 0 .16rem;
+        }
+      }
+      .column-line-block{
+        position: relative;
+        .click-hidden{
+          position: absolute;
+          width: 100%;
+          height: .8rem;
+          top: 0;
+          left: 0;
+          z-index: 99999999;
+        }
+      }
+      
+    }
+    .bottom-select{
+      width: 100%;
+      padding: 0 .32rem .4rem .32rem;
+      ul{
+        width: 6.88rem;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        li{
+          height: .88rem;
+          margin-left: .16rem;
+          padding: 0 .3rem;
+          display: inline-block;
+          border-radius: .08rem;
+          text-align: center;
+          font-size:.26rem;
+          line-height: .88rem;
+          color: #2D3034;
+          background-color: #F8F8F8;
+          &.active{
+            color: rgba(60,121,249,1);
+            background:rgba(244,247,255,1);
+            border:1px solid rgba(60,121,249,1);
+          }
+        }
+      }
+      .bottom-desc{
+        font-size: .24rem;
+        color: #FF3E18;
+        line-height: .34rem;
+        margin-top: .16rem;
+      }
+    }
+  }
+}
+
+.fortest{
+  &.am-popover-placement-bottomRight .am-popover-arrow{
+    right: 50%
+  }
+  box-shadow:0px 12px 36px 10px rgba(0,0,0,0.05),0px 8px 22px 0px rgba(0,0,0,0.08),0px 4px 8px -6px rgba(0,0,0,0.12);
+  .pop-list{
+    padding: .16rem;
+    ul li{
+      padding-bottom: .12rem;
+      font-size: .24rem;
+      font-family:PingFangSC-Regular,PingFang SC;
+      font-weight:400;
+      color:rgba(0,0,0,1);
+      line-height: .28rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      & span:first-child{
+        display: inline-block;
+        margin-right: .32rem;
+      }
+    }
+  }
+  .pop-title{
+    font-size: .18rem;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(140,140,140,1);
+    line-height:20px;
+    margin-bottom: .16rem;
+  }
+}
+
+.go-top{
+  position: fixed;
+    bottom: .98rem;
+    z-index: 9999;
+    right: .3rem;
+    width: .8rem;
+    height: .8rem;
+    & img{
+      width: .8rem;
+      height: .8rem;
+      display: inline-block;
+    }
+}
+
+
+/*入场动画开始*/
+.fade-enter {
+  opacity: 0;
+}
+ 
+/*入场动画过程*/
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}
+ 
+/*入场动画结束*/
+.fade-enter-done {
+  opacity: 1;
+}
+ 
+/*离场动画开始*/
+.fade-exit {
+  opacity: 1;
+}
+ 
+/*离场动画过程*/
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+ 
+/*离场动画结束*/
+.fade-exit-done {
+  opacity: 0;
+}
+ 
+/*页面第一次加载时的开始状态*/
+.fade-appear {
+  opacity: 0;
+}
+ 
+/*页面第一次加载时的动画过程*/
+.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1s ease-in;
+}

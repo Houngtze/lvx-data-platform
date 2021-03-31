@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no,viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script src="https://cdn.bootcss.com/babel-polyfill/6.23.0/polyfill.min.js"></script>
+    <script type="text/javascript">
+        document.oncontextmenu = new Function("event.returnValue=false");
+        document.onselectstart = new Function("event.returnValue=false");
+        document.oncontextmenu = function (e) {e.preventDefault()};
+        document.onselectstart = function (e) {e.preventDefault()};
+        document.addEventListener('contextmenu', function (e) {e.preventDefault()});
+        var DEFAULT_VERSION = 8.0;
+        var ua = navigator.userAgent.toLowerCase();
+        var isIE = ua.indexOf("msie")>-1;
+        var safariVersion;
+        if(isIE){
+        safariVersion =  ua.match(/msie ([\d.]+)/)[1];
+        }
+        if(safariVersion <= DEFAULT_VERSION ){
+          alert('系统检测到您正在使用ie8（包括）以下内核的浏览器，不能实现完美体验，请更换或升级浏览器访问！')
+        };
+    </script>
+    <title>绿信集团——绿地金融旗下企业</title>
+  </head>
+  <body style="background-color: #f7f7f7;">
+    <div id="root" style="height: 100%">
+      <img src="./static/base.gif" style="position: absolute;left: 0; top: 0; right: 0; bottom: 0;margin: auto;width: 130px;">
+    </div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
